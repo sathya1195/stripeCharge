@@ -10,17 +10,13 @@
 
 <!-- Theme CSS -->
 <link rel="stylesheet" href="{{ asset('css/theme.min.css') }}">
-<script async="" src="https://www.clarity.ms/s/0.7.24/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/kuc8w5o9nt"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-M8S4MT3EYG"></script>
-
-
 	</head>
-
     <body>
     <div class="border-bottom">
 	<div class="bg-light py-1">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-12 text-center text-md-start"><span>Super Value Deals - Save more with coupons</span></div>
+				<div class="col-md-6 col-12 text-center text-md-start"><span>Super Value Deals - Save more with Offers</span></div>
 				<div class="col-6 text-end d-none d-md-block">
 					<div class="dropdown selectBox">
 						<a class="" href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,13 +36,9 @@
 		<div class="container">
 			<div class="row w-100 align-items-center gx-lg-2 gx-0">
 				<div class="col-xxl-10 col-lg-3 col-md-10 col-5">
-					<a class="navbar-brand d-none d-lg-block" href="./index.html">
-						<img src="./assets/images/logo/freshcart-logo.svg" alt="eCommerce HTML Template">
-					</a>
+					
 					<div class="d-flex justify-content-between w-100 d-lg-none">
-						<a class="navbar-brand" href="./index.html">
-							<img src="./assets/images/logo/freshcart-logo.svg" alt="eCommerce HTML Template">
-						</a>
+						
 					</div>
 				</div>
 			

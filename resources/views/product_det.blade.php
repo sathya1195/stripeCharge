@@ -16,8 +16,13 @@
                 <h4>Product Details</h4>
                 <p><strong>Price:</strong> ${{$product->price}}</p>
                 <p><strong>Availability:</strong> In Stock</p>                
-                <p>Snack &amp; Munchies</p>                
+                <p>Snack &amp; Munchies</p>   
+                @if (auth()->check())                
                 <a  type="button" href="{{route('product.purchase',$product->id)}}" class="btn btn-info">Buy now using Stripe</a>
+                @else
+                <a  type="button" href="{{route('login')}}" class="btn btn-info">Buy now using Stripe</a>
+                @endif
+
             </div>
         </main>
         

@@ -4,6 +4,16 @@
 
 <script src="./assets/js/vendors/validation.js"></script>
 
+@if(session()->has('errors'))
+<div class="alert alert-danger">
+{{session()->get('errors')}}
+</div>
+@endif
+@if(session()->has('success'))
+<div class="alert alert-danger">
+{{session()->get('success')}}
+</div>
+@endif
 		<main>	
 			<!-- Popular Products Start-->
 			<section class="my-lg-14 my-8">

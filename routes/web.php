@@ -20,11 +20,14 @@ use App\Http\Controllers\Auth\LoginController;
 //     return view('welcome');
 // });
 
-Route::any('product',[ProductController::class,'product'])->name('product.list');
+Route::any('/',[ProductController::class,'product'])->name('product.list');
 Route::any('product_show\{product}',[ProductController::class,'show'])->name('product.show');
 Route::any('purchase\{product}',[ProductController::class,'purchase'])->name('product.purchase');
+Route::any('purchase_payment\{product}',[ProductController::class,'purchase_payment'])->name('product.purchase_payment');
 Route::get('register',[RegisterController::class,'register'])->name('auth.register');
 Route::post('register_sumit',[RegisterController::class,'register_sumit'])->name('auth.store');
 Route::get('login',[LoginController::class,'login'])->name('login');
 Route::any('authendicate',[LoginController::class,'authendicate'])->name('authendicate');
 Route::get('logout',[LoginController::class,'logout'])->name('logout');
+
+Route::get('/payment/requires_action/{paymentIntentId}', [ProductController::class, 'handleRequiresAction'])->name('payment.requires_action');
